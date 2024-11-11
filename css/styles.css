@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*--Para quitar subrayados de las listas--*/
+    text-decoration: none;
+
+}
+
+.body {
+    font-family: "Poppins", serif;
+    background-color: #0F0F0F;
+}
+
+
+
+.header_container {
+    background-image: url('../images/img0.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background: cover;
+    min-height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+
+}
+
+.menu_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* Hace que el menu se posicione adelante de cualquier otro elemento */
+    z-index: 1000;
+    background-color: #040404;
+    border-bottom: 1px solid #FFFFFF29;
+    gap: 750px;
+
+
+
+
+}
+
+.logo {
+    color: #5be10d;
+    font-size: 25px;
+    font-weight: 800px;
+
+
+}
+
+
+
+.menu_container .navbar ul li {
+    position: relative;
+    float: left;
+    list-style-type: none;
+}
+
+.menu_container .navbar ul li a {
+    font-size: 18px;
+    padding: 30px;
+    color: #FFFFFF;
+    /* para que se posicione bien */
+    display: block;
+
+}
+
+.menu_container .navbar ul li a:hover {
+    color: #5be10d;
+}
+
+/* oculta el cuadrito de cliclear */
+#menu {
+    display: none;
+}
+
+.menu_icono {
+    width: 25px;
+}
+
+.menu_container label {
+    display: none;
+    cursor: pointer;
+}
+
+.header_info h1 {
+    /* Sirve para poner las letras en mayuscula */
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 600px;
+    /* se utiliza para controlar el espacio entre las letras de un texto */
+    letter-spacing: 8px;
+    /* se utiliza para establecer un margen inferior en un elemento */
+    margin-bottom: 10px;
+    color: rgb(83, 224, 17);
+}
+
+.header_info p {
+    font-size: 25px;
+    /* Sirve para poner la primera letra de cada parrafo en mayuscula */
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    letter-spacing: 3px;
+    font-weight: 200px;
+    color: #FFFFFF;
+
+}
+
+.btn_1 {
+    /* se comporta como un elemento en línea (inline), lo que significa que puede estar en la misma línea que otros elementos, pero también puede tener propiedades de bloque, como establecer un ancho y alto, y aceptar márgenes y rellenos. */
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #5be10d;
+    color: #040404;
+    text-transform: uppercase;
+    font-weight: 900px;
+}
+
+.btn_1:hover {
+    background-color: #3b9209;
+}
+
+.contenedor_tarjetas {
+    background-color: #0f0f0f;
+    gap: 2px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px;
+    padding: 20px;
+    justify-items: center;
+    /* Centra horizontalmente los elementos */
+    align-items: center;
+    /*lo acoboooooooooooooooooo de pooooonerr 07-11-2024*/
+    width: 100%;
+}
+
+.sitio-1 {
+    /*lo acoboooooooooooooooooo de pooooonerr 07-11-2024*/
+    width: 80%;
+    padding-right: 150px;
+
+}
+
+
+
+.sitio-1 h2 {
+    font-size: 40px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 600px;
+    margin-bottom: 35px;
+}
+
+.sitio-1 p {
+    font-size: 16px;
+    color: #818181;
+    margin-bottom: 35px;
+}
+
+.sitio-1 span {
+    color: #5be10d;
+}
+
+.btn_2 {
+    display: inline-block;
+    padding: 8px 45px;
+    border-radius: 20px;
+    background-color: #5be10d;
+    font-size: 23px;
+    color: #040404;
+    text-transform: uppercase;
+
+
+}
+
+.img-1,
+.img-2,
+.img-4,
+.img-5,
+.img-6 {
+    width: 80%;
+    margin-right: 30px;
+    height: 380px;
+    border-radius: 10px;
+
+}
+
+.footer_container {
+    /* para que se vea una raya horizontal que separe las secciones si se requiere ver visualmente */
+    border-top: 1px solid #FFFFFF29;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #040404;
+}
+
+.footer_container h3 {
+    color: #5be10d;
+    font-size: 25px;
+    font-weight: 50px;
+}
+
+.links ul {
+    display: flex;
+}
+
+.links ul li {
+    margin-right: 26px;
+}
+
+.links ul li a {
+    color: #818181;
+}
+
+@media(max-width:991px) {
+
+    .menu_container {
+        padding: 20px;
+
+    }
+
+    .menu_container label {
+        display: initial;
+    }
+
+    .menu_container .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #30303075;
+        display: none;
+
+    }
+
+    .menu_container .navbar ul li {
+        width: 100%;
+
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+
+    }
+
+    .header_container {
+        padding: 30px;
+        margin-top: 10px;
+    }
+
+    .header_info h1 {
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+
+    contenedor_tarjetas {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .sitio_1 {
+        width: 100%;
+        padding: 0;
+        order: 1;
+    }
+
+    .sitio_1 h2 {
+        margin: bottom 15PX;
+    }
+
+    .btn_2 {
+        margin-bottom: 35px;
+    }
+
+    .sitio_2 {
+        order: 2;
+        width: 100px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .img-1,
+    .img-2,
+    .img-4,
+    .img-5,
+    .img-6 {
+        margin: 0 0 20px 0;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .footer_container li  {
+        list-style-type: none;
+    }
+
+}
